@@ -199,7 +199,129 @@ A: 支持，代码自动检测GPU并使用（如有CUDA可用）。
 
 ---
 
-## 📝 依赖包
+## �️ 技术栈
+
+### 深度学习框架
+
+#### 🔥 PyTorch
+- **版本**: Latest stable
+- **用途**: 核心深度学习框架
+- **具体应用**:
+  - `torch.nn` - 神经网络模块
+  - `torch.optim` - 优化器（Adam）
+  - `torch.utils.data` - 数据加载器
+  - 自动微分和梯度计算
+  - GPU 加速支持（CUDA）
+
+### 深度学习模型架构
+
+#### 🧠 BiLSTM（双向长短期记忆网络）
+- **组件**:
+  - `nn.Embedding` - 词嵌入层（128维）
+  - `nn.LSTM` - 双向LSTM（256维隐藏层）
+  - `nn.Dropout` - Dropout正则化（0.3）
+  - `nn.Linear` - 全连接输出层
+
+#### 🤖 Transformer
+- **组件**:
+  - `nn.Embedding` - 词嵌入层
+  - 位置编码（Positional Encoding）
+  - `nn.TransformerEncoder` - Transformer编码器
+  - 多头注意力机制（8个头）
+  - 2层编码器堆叠
+
+### 数据处理与科学计算
+
+#### 📊 NumPy
+- 数值计算基础库
+- 数组操作和数学运算
+
+#### 🔬 Scikit-learn
+- **K-Fold交叉验证** (`KFold`)
+- **评估指标**:
+  - `classification_report` - 精确率、召回率、F1分数
+  - `confusion_matrix` - 混淆矩阵
+- 数据划分和预处理
+
+### 数据可视化
+
+#### 📈 Matplotlib
+- 绘制训练损失曲线
+- 绘制精度曲线
+- 图表展示和保存
+
+#### 🎨 Seaborn
+- 美化混淆矩阵热力图
+- 统计数据可视化
+- 基于Matplotlib的高级可视化
+
+### 测试框架
+
+#### ✅ Pytest
+- 单元测试框架
+- 测试数据读取和处理函数
+- 自动化测试运行
+
+### 机器学习技术
+
+#### 🎯 训练技术
+- **K-Fold交叉验证** - 5折验证，提高模型评估可靠性
+- **批量训练** (Batch Training) - 高效数据处理
+- **反向传播** (Backpropagation) - 梯度下降优化
+- **Adam优化器** - 自适应学习率优化
+- **交叉熵损失** (Cross-Entropy Loss) - 序列标注损失函数
+- **Dropout正则化** - 防止过拟合
+
+#### 📊 评估指标
+- **Accuracy**（准确率） - 整体预测正确率
+- **Precision**（精确率） - 预测为正的样本中真正为正的比例
+- **Recall**（召回率） - 真正为正的样本中被正确预测的比例
+- **F1-Score**（F1分数） - 精确率和召回率的调和平均
+- **Confusion Matrix**（混淆矩阵） - 分类结果可视化
+
+### 自然语言处理技术
+
+#### 📝 NLP核心技术
+- **序列标注** (Sequence Labeling) - 为序列中的每个元素分配标签
+- **词嵌入** (Word Embedding) - 将词转换为稠密向量表示
+- **命名实体识别** (Named Entity Recognition) - 识别文本中的实体
+- **IOB标注格式** (Inside-Outside-Begin) - B-PER, I-PER, O 等标签
+
+### 技术栈总结
+
+| 类别 | 技术/工具 | 版本 | 用途 |
+|------|-----------|------|------|
+| **深度学习框架** | PyTorch | Latest | 模型构建与训练 |
+| **科学计算** | NumPy | Latest | 数值计算 |
+| **机器学习** | Scikit-learn | Latest | 评估与验证 |
+| **数据可视化** | Matplotlib | Latest | 绘制曲线图 |
+| **统计可视化** | Seaborn | Latest | 热力图 |
+| **测试框架** | Pytest | Latest | 单元测试 |
+| **编程语言** | Python | 3.13+ | 主要开发语言 |
+| **模型架构** | BiLSTM | - | 序列标注模型 |
+| **模型架构** | Transformer | - | 自注意力模型 |
+| **NLP任务** | NER | - | 命名实体识别 |
+
+### 技术亮点 ✨
+
+1. **双模型支持** - BiLSTM 和 Transformer 可选，适应不同场景
+2. **K-Fold交叉验证** - 提高模型评估的可靠性和泛化能力
+3. **自动化可视化** - 训练过程和结果自动生成图表
+4. **模块化设计** - 数据、模型、训练、评估清晰分离
+5. **GPU自动检测** - 智能使用CUDA加速训练
+6. **类型安全** - 使用Python类型注解，提高代码质量
+
+### 适用场景 💡
+
+- 📚 学术研究和论文实验
+- 🎓 NLP课程作业和项目
+- 🏢 中小规模NER任务
+- 🔰 深度学习入门学习
+- 🧪 模型对比实验
+
+---
+
+## �📝 依赖包
 
 - `torch`: PyTorch深度学习框架
 - `numpy`: 数值计算
