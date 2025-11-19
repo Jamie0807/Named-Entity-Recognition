@@ -1,0 +1,9 @@
+John B-PER
+lives O
+in O
+London B-LOC
+
+Mary B-PER
+works O
+at O
+Google B-ORG

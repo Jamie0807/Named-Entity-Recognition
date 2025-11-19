@@ -1,0 +1,1 @@
+# Top-level package marker for imports like `from src.ner import ...`
